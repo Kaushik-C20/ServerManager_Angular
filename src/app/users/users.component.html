@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-4">
+    <div class="list-group">
+      <a
+        class="list-group-item"
+        *ngFor="let user of users"
+        [routerLink]="['/users', user.id, user.name]">
+        {{ user.name }}
+      </a>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-4 user">
+    <router-outlet></router-outlet>
+    <!-- <app-user></app-user> -->
+    <!-- <ng-template #infoText>
+      <p style="color: coral;font-weight: 800;text-shadow: 1px 1px 1px black;">No User Is Selected!</p>
+      <p style="color: coral;font-weight: 800;text-shadow: 1px 1px 1px black;">Please Select a User to Display.</p>
+    </ng-template> -->
+  </div>
+</div>
+
+

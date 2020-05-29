@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-image: linear-gradient(to top left,
+                                      rgba(19, 224, 12, 0.931),
+                                      rgb(63, 217, 228) 30%,
+                                      rgb(255, 36, 237));
+    box-shadow: inset 2px 2px 3px rgba(51, 247, 12, 0.945),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
